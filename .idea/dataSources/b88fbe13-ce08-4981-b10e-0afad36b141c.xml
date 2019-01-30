@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="event_manager@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="event_manager">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="121"/>
+    <schema id="4" parent="1" name="api_crud"/>
+    <schema id="5" parent="1" name="compania"/>
+    <schema id="6" parent="1" name="compfeed"/>
+    <schema id="7" parent="1" name="easyfood"/>
+    <schema id="8" parent="1" name="event_calendar"/>
+    <schema id="9" parent="1" name="geodata"/>
+    <schema id="10" parent="1" name="glav_otzyv_db"/>
+    <schema id="11" parent="1" name="homestead"/>
+    <schema id="12" parent="1" name="information_schema"/>
+    <schema id="13" parent="1" name="landevent"/>
+    <schema id="14" parent="1" name="myshop"/>
+    <schema id="15" parent="1" name="mysql"/>
+    <schema id="16" parent="1" name="my_test"/>
+    <schema id="17" parent="1" name="new_schema"/>
+    <schema id="18" parent="1" name="otzovik_new"/>
+    <schema id="19" parent="1" name="otzovik_three"/>
+    <schema id="20" parent="1" name="otzovik_two"/>
+    <schema id="21" parent="1" name="parser_three"/>
+    <schema id="22" parent="1" name="performance_schema"/>
+    <schema id="23" parent="1" name="sng_db"/>
+    <schema id="24" parent="1" name="ssdua_otzovthree"/>
+    <schema id="25" parent="1" name="ssdua_testova"/>
+    <schema id="26" parent="1" name="symfony"/>
+    <schema id="27" parent="1" name="sys"/>
+    <schema id="28" parent="1" name="testova"/>
+    <schema id="29" parent="1" name="ukr_db"/>
+    <schema id="30" parent="1" name="yourquery"/>
+    <schema id="31" parent="1" name="yourqueryDB_en"/>
+    <schema id="32" parent="1" name="yourqueryDB_ru"/>
+    <schema id="33" parent="1" name="yourquer_my"/>
+    <table id="34" parent="2" name="calendar_events"/>
+    <table id="35" parent="2" name="migrations"/>
+    <table id="36" parent="2" name="password_resets"/>
+    <table id="37" parent="2" name="user_fcm_tokens"/>
+    <table id="38" parent="2" name="users"/>
+    <column id="39" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="40" parent="34" name="title">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="34" name="is_all_day">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="34" name="start">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="34" name="end">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="34" name="user_id">
+      <Position>6</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="34" name="background_color">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="34" name="file_path">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="34" name="created_at">
+      <Position>9</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="48" parent="34" name="updated_at">
+      <Position>10</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <key id="49" parent="34" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="50" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="51" parent="35" name="migration">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="35" name="batch">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="53" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="54" parent="36" name="email">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="36" name="token">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="36" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <index id="57" parent="36" name="password_resets_email_index">
+      <ColNames>email</ColNames>
+    </index>
+    <column id="58" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="59" parent="37" name="user_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="37" name="fcm">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="37" name="created_at">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="62" parent="37" name="updated_at">
+      <Position>5</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <key id="63" parent="37" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="64" parent="38" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="65" parent="38" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="38" name="email">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="38" name="email_verified_at">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="68" parent="38" name="password">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="38" name="remember_token">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="70" parent="38" name="created_at">
+      <Position>7</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="71" parent="38" name="updated_at">
+      <Position>8</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <index id="72" parent="38" name="users_email_unique">
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="73" parent="38" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="74" parent="38" name="users_email_unique">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
